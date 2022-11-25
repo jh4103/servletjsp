@@ -17,6 +17,7 @@ import dto.Board;
 public class Exam01Controller extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//처리 결과 생성
 		List<Board> boards = new ArrayList<>();
 		
 		for(int i=1; i<=5; i++){
@@ -29,8 +30,10 @@ public class Exam01Controller extends HttpServlet {
 			boards.add(board);
 		}
 		
+		//결과를 JSP에서 사용할 수 있도록 설정
 		request.setAttribute("list", boards);
 		
+		//JSP로 이동
 		request.getRequestDispatcher("jsp/exam01_view.jsp").forward(request, response);
 		
 	}
