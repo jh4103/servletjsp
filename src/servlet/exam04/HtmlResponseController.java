@@ -26,7 +26,7 @@ public class HtmlResponseController extends HttpServlet {
 //		pw.print("</html>");
 //		pw.flush();
 //		pw.close();
-		request.getRequestDispatcher("/WEB-INF/views/exam04/html.jsp");
+		request.getRequestDispatcher("/WEB-INF/views/exam04/html.jsp").forward(request, response);
 	}
 
 	

@@ -15,13 +15,14 @@ public class ContentController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("exam04.ContentController.doGet() 실행");
 		request.getRequestDispatcher("/WEB-INF/views/exam04/content.jsp").forward(request, response);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		request.getRequestDispatcher("/WEB-INF/views/exam04/content.jsp").forward(request, response);
+		System.out.println("exam04.ContentController.doPost() 실행");
+		response.sendRedirect("/servletjsp/HomeController");
 	}
 
 }

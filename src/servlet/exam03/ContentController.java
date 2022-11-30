@@ -26,7 +26,7 @@ public class ContentController extends HttpServlet{
 		if(config.getInitParameter("encoding") == null){
 			encoding = "UTF-8";
 		} else {
-			encoding = config.getInitParameter("encoing");
+			encoding = config.getInitParameter("encoding");
 		}
 		
 		if(config.getInitParameter("viewLocation") == null){
@@ -50,17 +50,17 @@ public class ContentController extends HttpServlet{
 		request.getRequestDispatcher("/WEB-INF/views/exam03/content.jsp").forward(request, response);
 	}
 	//클라이언트가 요청할 때 마다 실행
-		@Override
-		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			System.out.println("exam03.ContentController.doPost() 실행");
-			
-			request.setCharacterEncoding(encoding);
-			
-			String param1 = request.getParameter("param1");
-			System.out.println("param1: " + param1);
-			
-			request.getRequestDispatcher("/WEB-INF/views/exam03/content.jsp").forward(request, response);
-		}
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("exam03.ContentController.doPost() 실행");
+		
+		request.setCharacterEncoding(encoding);
+		
+		String param1 = request.getParameter("param1");
+		System.out.println("param1: " + param1);
+		
+		request.getRequestDispatcher(viewLocation + "/exam03/content.jsp").forward(request, response);
+	}
 	
 	//서블릿이 제거될 때(Undeployment)
 	@Override
