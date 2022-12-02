@@ -13,6 +13,6 @@ public class Board {
 	private Date bdate;
 	private String bfileName;
 	private String besavedName;
-	private String bcontentType;
+	private String bfileType;
 	
 }

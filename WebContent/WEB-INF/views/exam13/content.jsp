@@ -1,17 +1,19 @@
+<%-- 지시자 --%>
 <%@ page contentType="text/html; charset=UTF-8" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ include file="/WEB-INF/views/common/header.jsp" %>
 
 <div class="card m-2">
 	<div class="card-header">
-		content.jsp
+		게시물 목록
 	</div>
 	<div class="card-body">
-		<form method="post" action="${pageContext.request.servletContext}/exam03/ContentController">
-			<input type="text" name="param1" value="홍길동"><br/>
-			<input type="submit" value="Form으로 제출" class="btn btn-info btn-sm"/>
-		</form>
+		<a href="WriteController" class="btn btn-info btn-sm">글쓰기</a>
+		
+		
 	</div>
 </div>
+
 
 <%@ include file="/WEB-INF/views/common/footer.jsp" %>
