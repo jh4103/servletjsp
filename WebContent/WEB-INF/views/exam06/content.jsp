@@ -13,7 +13,9 @@
 		<hr/>
 		<button onclick="readCookie()" class="btn btn-info btn-sm">쿠키읽기</button>
 		<script>
-			function.log(document.cookie);
+			function readCookie(){
+			console.log(document.cookie);
+			}	
 		</script>
 	</div>
 </div>
