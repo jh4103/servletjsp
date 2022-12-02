@@ -36,7 +36,31 @@
 	<li class="nav-item mb-2">
 		<h6 class="text-white">
 			<span class="mr-2">Exam06.</span>
-			<a class="text-white" href="/servletjsp/exam06/ContentController">상태유지  - 쿠키</a>
+			<a class="text-white" href="/servletjsp/exam06/ContentController">상태유지  - Cookie(클라이언트측 저장)</a>
+		</h6>
+	</li>
+	<li class="nav-item mb-2">
+		<h6 class="text-white">
+			<span class="mr-2">Exam07.</span>
+			<a class="text-white" href="/servletjsp/exam07/ContentController">상태유지  - HttpSession(서버측 저장)</a>
+		</h6>
+	</li>
+	<li class="nav-item mb-2">
+		<h6 class="text-white">
+			<span class="mr-2">Exam08.</span>
+			<a class="text-white" href="/servletjsp/exam08/ContentController">상태유지  - ServletContext(서버측 저장)</a>
+		</h6>
+	</li>
+	<li class="nav-item mb-2">
+		<h6 class="text-white">
+			<span class="mr-2">Exam09.</span>
+			<a class="text-white" href="/servletjsp/HomeController">필터테스트 (주석빼고해봐)</a>
+		</h6>
+	</li>
+	<li class="nav-item mb-2">
+		<h6 class="text-white">
+			<span class="mr-2">Exam10.</span>
+			<a class="text-white" href="/servletjsp/exam10/ContentController">예외처리</a>
 		</h6>
 	</li>
 </ul>
