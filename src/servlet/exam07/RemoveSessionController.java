@@ -27,7 +27,7 @@ public class RemoveSessionController extends HttpServlet {
 		
 		//HttpSession 객체 자체를 제거 (세션 그 자체를 제거)
 		//session에 담겼던 객체를 다 없어짐. 세션 객체는 다시 서블릿 객체를 만들어진다.
-	/*	session.invalidate();*/
+		/*	session.invalidate();*/
 		
 		response.sendRedirect("ContentController");
 		

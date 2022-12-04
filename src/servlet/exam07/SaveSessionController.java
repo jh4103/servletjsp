@@ -37,6 +37,7 @@ public class SaveSessionController extends HttpServlet {
 			
 			List<String> cart = new ArrayList<>();
 			session.setAttribute("cart", cart);
+			System.out.println(cart);
 			
 			
 			response.sendRedirect("ContentController");

@@ -22,7 +22,6 @@ public class AddProductToCartController extends HttpServlet {
 			List<String> cart =(List<String>) session.getAttribute("cart");
 			String productName = request.getParameter("productName");
 			cart.add(productName);
-		
 		}
 		
 		

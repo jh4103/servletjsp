@@ -8,8 +8,8 @@
 		content.jsp
 	</div>
 	<div class="card-body">
-		<a href="${pageContext.request.servletContext}/exam08/UserJoinController" class="btn btn-info btn-sm">회원 가입</a>
-		<a href="${pageContext.request.servletContext}/exam08/BoardWriteController" class="btn btn-info btn-sm">게시물 쓰기</a>
+		<a href="${pageContext.request.contextPath}/exam08/UserJoinController" class="btn btn-info btn-sm">회원 가입</a>
+		<a href="${pageContext.request.contextPath}/exam08/BoardWriteController" class="btn btn-info btn-sm">게시물 쓰기</a>
 	</div>
 </div>
 
