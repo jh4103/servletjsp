@@ -14,5 +14,5 @@ public class Board {
 	private String bfileName;
 	private String besavedName;
 	private String bfileType;
-	
+	private int bhitcount;
 }

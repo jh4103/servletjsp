@@ -74,7 +74,7 @@
 								<td>${board.bcontent}</td>
 								<td>${board.bwriter}</td>
 								<td>${board.bdate}</td>
-								<td><fmt:formatDate value="${board.bdate}" pattern="yyy.MM.dd"/> </td>
+								<td><fmt:formatDate value="${board.bdate}" pattern="yyyy.MM.dd"/> </td>
 							</tr>
 						</c:forEach>
 					</tbody>
