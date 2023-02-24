@@ -7,7 +7,7 @@
 	<div class="card-header">
 		joinForm.jsp
 	</div>
-	<div class="card-body">
+	<div class="card-body ">
 		<form method="post" action="BoardWriteController">
 		  <div class="form-group">
 		    <label for="btitle">Title</label>
